@@ -129,7 +129,7 @@
 
 
 
-import { useEffect, useState } from "react"
+
 import workimg1 from "../images/work (1).jpeg"
 import workimg2 from "../images/work (2).jpeg"
 import workimg3 from "../images/work (3).jpeg"
