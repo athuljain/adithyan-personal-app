@@ -50,8 +50,8 @@ const About = () => {
           </div>
 
           <div style={styles.statsBar}>
-            <div style={styles.statItem}><strong>10+</strong> <span>Years Exp.</span></div>
-            <div style={styles.statItem}><strong>500+</strong> <span>Shoots</span></div>
+            <div style={styles.statItem}><strong>6+</strong> <span>Years Exp.</span></div>
+            <div style={styles.statItem}><strong>100+</strong> <span>Shoots</span></div>
             {/* <div style={styles.statItem}><strong>20+</strong> <span>Awards</span></div> */}
           </div>
         </div>
