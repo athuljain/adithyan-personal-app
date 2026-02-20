@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,39 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.hamburger {
+  display: none; /* Hidden on desktop */
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show on mobile */
+  }
+
+  .nav-links {
+    position: fixed;
+    right: -100%; /* Hide off-screen */
+    top: 70px;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    padding-top: 50px;
+  }
+
+  .nav-links.active {
+    right: 0; /* Slide in when active */
   }
 }
