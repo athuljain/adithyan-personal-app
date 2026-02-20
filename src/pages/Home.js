@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import homeBGImg from "../images/homeBg.jpg";
-import ProfilePic from "../images/profilePic.jpg";
+import ProfilePic from "../images/profilePic.jpeg";
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <div style={styles.content}>
         <img src={ProfilePic} alt="Adithya Chandra" style={styles.profileImg} />
         <h1 style={styles.name}>Adithya Chandra</h1>
+        <h4>Adithyachandra9745@gmail.com</h4>
         <p style={styles.subtitle}>Capturing the essence of light and life.</p>
         
         <ScrollLink to="works" smooth={true} duration={500}>

@@ -6,11 +6,10 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // Replace these strings with your actual EmailJS credentials
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
       .then(() => {
           alert("Message Sent successfully!");
-          form.current.reset(); // Clears the form after sending
+          form.current.reset();
       }, (error) => {
           alert("Failed to send: " + error.text);
       });
@@ -21,17 +20,19 @@ const Contact = () => {
       <div style={styles.container}>
         <div style={styles.headerSection}>
           <h2 style={styles.heading}>Get In Touch</h2>
-          {/* <p style={styles.subtext}>Available for freelance projects and exhibitions.</p> */}
           
           <div style={styles.contactInfo}>
+            {/* Phone Number Section */}
             <div style={styles.infoItem}>
               <span style={styles.icon}>📞</span>
-              <a href="tel:+1234567890" style={styles.link}>+971 56 298 0445</a>
+              <a href="tel:+971562980445" style={styles.link}>+971 56 298 0445</a>
             </div>
-            {/* <div style={styles.infoItem}>
-              <span style={styles.icon}>📍</span>
-              <span style={styles.link}>San Francisco, CA</span>
-            </div> */}
+
+            {/* Email Section - ADDED THIS */}
+            <div style={styles.infoItem}>
+              <span style={styles.icon}>✉️</span>
+              <a href="mailto:yourname@example.com" style={styles.link}>Adithyachandra9745@gmail.com</a>
+            </div>
           </div>
         </div>
 
